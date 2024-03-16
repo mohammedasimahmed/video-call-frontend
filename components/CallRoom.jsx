@@ -21,7 +21,7 @@ const CallRoom = ({ roomid }) => {
     socket.on("user_left", (pid) => {
       if (otherusers[pid]) {
         otherusers[pid].close();
-        delete otherusers[pid]
+        delete otherusers[pid];
       }
     });
     playVideo();
